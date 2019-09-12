@@ -1,8 +1,11 @@
 body {
-background-image: url("Hex.jpg");
-color: gray;
+background-image: url("clash.jpg");
+background-size: 1920px 1000px;
+color: yellow;
 cursor: crosshair;
 letter-spacing: 10;
+}
+h1{ font-size: 100px;
 }
 label {
 	display: block;
@@ -14,5 +17,39 @@ input,
 label {
 	margin: .4rem0;
 	width: 300px;
+	border-radius: 5px;
+}
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
 
-]
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  font-family: monospace;
+  letter-spacing: 10px;
+  animation: colorRotate 0.1s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
